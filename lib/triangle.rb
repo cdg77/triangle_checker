@@ -28,4 +28,17 @@ class Triangle
       false
     end
   end
+
+  define_method(:triangle?) do
+    ab_total = @side_a + @side_b
+    ac_total = @side_b + @side_c
+    bc_total = @side_b + @side_c
+
+    if ab_total <= @side_c || ac_total <= @side_b || bc_total <= @side_a
+      false
+    else
+      true
+    end
+  end
+
 end

@@ -21,9 +21,9 @@ describe('Triangle') do
     end
   end
   describe('#triangle?') do
-    it('checks to see if this object is a triangle') do
-      new_triangle = Triangle.new(4, 2, 1)
-      expect(new_triangle.triangle?()).to(eq(true))
+    it('checks to see if this object is not a triangle') do
+      new_triangle = Triangle.new(1, 2, 3)
+      expect(new_triangle.triangle?()).to(eq(false))
     end
   end
 end
