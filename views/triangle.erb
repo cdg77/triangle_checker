@@ -1,1 +1,9 @@
-<h1><%= @results %></h1>
+<% if @results.equilateral? %>
+  <h1>Equilateral</h1>
+<% elsif @results.isosceles? %>
+  <h1>Isosceles</h1>
+<% elsif @results.scalene? %>
+  <h1>Scalene</h1>
+<% else %>
+  <h1>This is not a triangle.<h1>
+<% end %>    

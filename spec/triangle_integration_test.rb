@@ -10,6 +10,6 @@ describe('the triangle path', {:type => :feature}) do
     fill_in('side_b', :with => '3')
     fill_in('side_c', :with => '3')
     click_button('Submit')
-    expect(page).to have_content('equilateral')
+    expect(page).to have_content('Equilateral')
   end
 end
