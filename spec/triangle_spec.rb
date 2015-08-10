@@ -20,4 +20,10 @@ describe('Triangle') do
       expect(new_triangle.scalene?()).to(eq(true))
     end
   end
+  describe('#triangle?') do
+    it('checks to see if this object is a triangle') do
+      new_triangle = Triangle.new(4, 2, 1)
+      expect(new_triangle.triangle?()).to(eq(true))
+    end
+  end
 end
